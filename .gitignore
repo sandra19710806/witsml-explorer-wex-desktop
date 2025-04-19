@@ -1,0 +1,131 @@
+**/.ignore*
+**/.dccache
+# Rider settings
+.idea/
+.eslintcache
+
+# VS Code settings
+.vs/
+.vscode/*
+**/.vscode/*
+!.vscode/settings.json
+.eslintcache
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+dist/
+bin/
+obj/
+Src/**/obj
+Src/**/out/
+
+# Config file
+Tests/Witsml.Tests/config.json
+**/secrets.json
+config.json
+**/mysettings.*
+
+# Database files
+*.db
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+
+# We ignore package-lock.json since we are using yarn
+package-lock.json
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.e2e
+$tf/
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Coverlet is a free, cross platform Code Coverage Tool
+coverage*[.json, .xml, .info]
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+
+# Local History for Visual Studio
+.localhistory/
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+/Tests/WitsmlExplorer.IntegrationTests/Properties/launchSettings.json
+
+.fake
+
+# TGZ files
+*.tgz

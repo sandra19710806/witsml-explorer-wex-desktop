@@ -1,0 +1,26 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <LangVersion>latestMajor</LangVersion>
+    <TargetFramework>net8.0</TargetFramework>
+    <NoWarn>$(NoWarn);NU1507</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>WitsmlClient</PackageId>
+    <Authors>WitsmlExplorer contributors</Authors>
+    <Description>This client library enables working with WITSML servers. The library supports a growing subset of the WITSML 1.4 standard and have CRUD operations for supported data objects</Description>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/equinor/witsml-explorer</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/equinor/witsml-explorer/</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageTags>witsml;sitecom</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" />
+    <PackageReference Include="Serilog.Sinks.File" />
+    <PackageReference Include="System.ServiceModel.Http" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" />
+  </ItemGroup>
+</Project>

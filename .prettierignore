@@ -1,0 +1,17 @@
+# Ignore artifacts:
+Tests
+Src/Witsml
+Src/WitsmlExplorer.Api
+Src/WitsmlExplorer.Console
+Src/WitsmlExplorer.Frontend/build
+Src/WitsmlExplorer.Frontend/obj
+Src/WitsmlExplorer.Frontend/bin
+Src/WitsmlExplorer.Frontend/dist
+
+.vscode/*
+
+*.md
+*.yml
+.prettierignore
+.github
+eslint.config.js

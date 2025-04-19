@@ -1,0 +1,46 @@
+# Do not change these
+*.jpg binary
+*.png binary
+*.gif binary
+
+# Normalize these files
+*.cs text diff=csharp eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.html text diff=html eol=lf
+*.css text diff=css eol=lf
+*.scss text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.sh text eol=lf
+
+# Make sure npm package files use LF
+package.json text eol=lf
+
+# Merge rules for certain files
+*.csproj text merge=union
+*.vbproj text merge=union
+*.fsproj text merge=union
+*.dbproj text merge=union
+*.sln text eol=crlf merge=union
+
+# Treat as text files
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.dockerignore text eol=lf
+.prettierignore text eol=lf
+.editorconfig text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.config text eol=lf
+*.xml text eol=lf
+VERSION text eol=lf
+LICENSE text eol=lf
+Dockerfile* text eol=lf
+
+# Special Swagger related files
+ApiClient.cs binary
+swagger.json binary
+
+# yarn.lock
+yarn.lock -diff merge=ours

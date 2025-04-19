@@ -1,0 +1,40 @@
+{
+  "name": "witsml-explorer-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The root package.json for Witsml Explorer",
+  "homepage": "https://github.com/equinor/witsml-explorer#readme",
+  "bugs": {
+    "url": "https://github.com/equinor/witsml-explorer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/equinor/witsml-explorer.git"
+  },
+  "license": "Apache-2.0",
+  "workspaces": {
+    "packages": [
+      "Src/WitsmlExplorer.Desktop",
+      "Src/WitsmlExplorer.Frontend"
+    ],
+    "nohoist": [
+      "**electron**"
+    ]
+  },
+  "scripts": {
+    "dotnet-format": "dotnet tool run dotnet-format --check",
+    "dotnet-format:fix": "dotnet tool run dotnet-format",
+    "eslint": "eslint . --cache",
+    "eslint:fix": "eslint . --cache --fix",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{cs,vb}": [
+      "dotnet tool run dotnet-format --include"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^15.2.4"
+  }
+}
